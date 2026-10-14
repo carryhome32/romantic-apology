@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff0f5" />
+  <title>A Little Invitation for You 💌</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient-glow glow-one"></div>
+  <div class="ambient-glow glow-two"></div>
+  <div id="floating-hearts" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Start over" onclick="showPage(1); return false;">
+      <span class="brand-mark">♡</span><span>A little note from me</span>
+    </a>
+    <div class="page-count" aria-live="polite"><span id="current-count">01</span><span class="count-line"></span><span>03</span></div>
+  </header>
+
+  <main>
+    <!-- PAGE 1: Invitation -->
+    <section class="page page-one active" id="page-1" aria-labelledby="invitation-title">
+      <div class="petal petal-a">✿</div><div class="petal petal-b">✿</div>
+      <div class="intro-copy">
+        <p class="eyebrow"><span class="tiny-heart">♥</span> A small invitation, made with love</p>
+        <h1 id="invitation-title">For my favorite<br><em>person.</em></h1>
+        <p class="intro-subtitle">There are a few things my heart has been wanting to tell you.</p>
+      </div>
+
+      <button class="envelope-scene" id="envelope-button" aria-label="Open the invitation envelope" type="button">
+        <span class="sparkle sparkle-one">✦</span><span class="sparkle sparkle-two">✧</span><span class="sparkle sparkle-three">✦</span>
+        <span class="envelope-shadow"></span>
+        <span class="letter-peek">
+          <span class="letter-peek-heart">♡</span>
+          <span class="letter-peek-text">just for you</span>
+          <span class="letter-peek-flourish">with love, always</span>
+        </span>
+        <span class="envelope-back"></span>
+        <span class="envelope-front"></span>
+        <span class="envelope-flap"></span>
+        <span class="wax-seal">♥</span>
+        <span class="envelope-hint">tap to open</span>
+      </button>
+
+      <p class="invitation-caption">A little moment just for us <span>♡</span></p>
+      <button class="primary-button" id="open-invitation" type="button">Open your invitation <span>↗</span></button>
+      <p class="soft-note">Made with a full heart, just for you.</p>
+    </section>
+
+    <!-- PAGE 2: Letter -->
+    <section class="page page-two" id="page-2" aria-labelledby="letter-title" hidden>
+      <div class="letter-heading">
+        <p class="eyebrow">from my heart to yours</p>
+        <h2 id="letter-title">A letter I owe you<span class="heading-heart">♡</span></h2>
+        <p class="letter-deck">Some words are easier to write when I can take my time and mean every one.</p>
+      </div>
+      <article class="letter-paper">
+        <div class="paper-flower flower-left">❀</div><div class="paper-flower flower-right">✿</div>
+        <p class="letter-date">For <span data-her-name>[Her Name]</span>, with love</p>
+        <div class="letter-body">
+          <p>My love,</p>
+          <p>I’m truly sorry for hurting you. I’ve been thinking about what happened and about how my words or actions made you feel. You matter so much to me, and it hurts to know that I caused you pain.</p>
+          <p>I don’t want to make excuses or ask you to forget what happened. I want to take responsibility, listen to you properly, and understand what I need to do differently. You deserve patience, honesty, respect, and a love that feels safe—not just promises, but actions that prove them.</p>
+          <p>I know an apology cannot instantly fix everything, and I don’t expect it to. I only hope you can see that I mean this with all my heart. If you need time, I will respect that. If you want to talk, I’ll listen without trying to defend myself.</p>
+          <p>Thank you for the love and happiness you’ve brought into my life. I’m sorry I let you down. I want to learn from this and become someone who treats your heart with the care it deserves.</p>
+          <p class="letter-emphasis">I’m not asking for everything to be okay today. I’m asking for the chance to do better, one honest step at a time.</p>
+          <p class="letter-signoff">With all my love,</p>
+          <p class="signature" data-my-name>[Your Name]</p>
+        </div>
+        <div class="paper-bottom-heart">♡</div>
+      </article>
+      <div class="letter-actions">
+        <button class="text-button" type="button" onclick="showPage(1)">← Back to invitation</button>
+        <button class="primary-button" type="button" onclick="showPage(3)">There’s one more thing <span>♡</span></button>
+      </div>
+      <p class="soft-note">Please read this whenever you feel ready. There’s no pressure.</p>
+    </section>
+
+    <!-- PAGE 3: Memories + gift -->
+    <section class="page page-three" id="page-3" aria-labelledby="memories-title" hidden>
+      <div class="letter-heading">
+        <p class="eyebrow">little things, big feelings</p>
+        <h2 id="memories-title">Our little corner of the world<span class="heading-heart">♡</span></h2>
+        <p class="letter-deck">A few memories I want to keep close, and a tiny gift for you.</p>
+      </div>
+
+      <div class="memory-grid">
+        <figure class="memory-card memory-tall">
+          <div class="photo-frame">
+            <img src="C:\Users\pdyut\OneDrive\Desktop\romantic_apology_invitation\romantic_apology_invitation\assets\photo-1.jpg" alt="A favorite photo of us" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="photo-placeholder"><span>♡</span><strong>Our favorite photo</strong><small>Add your picture here</small></div>
+            <span class="photo-number">01</span>
+          </div>
+          <figcaption><span class="caption-title">A moment I love</span><span class="caption-note">29 oct 2025</span></figcaption>
+        </figure>
+        <figure class="memory-card memory-offset">
+          <div class="photo-frame">
+            <img src="C:\Users\pdyut\OneDrive\Desktop\romantic_apology_invitation\romantic_apology_invitation\assets\photo-2.jpg" alt="A special memory together" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="photo-placeholder placeholder-peach"><span>✿</span><strong>A day to remember</strong><small>Add your picture here</small></div>
+            <span class="photo-number">02</span>
+          </div>
+          <figcaption><span class="caption-title">My favorite smile</span><span class="caption-note">A memory close to my heart. ❤️</span></figcaption>
+        </figure>
+        <figure class="memory-card memory-wide">
+          <div class="photo-frame">
+            <img src="C:\Users\pdyut\OneDrive\Desktop\romantic_apology_invitation\romantic_apology_invitation\assets\photo-3.jpg" alt="Another cherished memory" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="photo-placeholder placeholder-lilac"><span>☾</span><strong>One of our little adventures</strong><small>Add your picture here</small></div>
+            <span class="photo-number">03</span>
+          </div>
+          <figcaption><span class="caption-title">More memories to make</span><span class="caption-note">Our story isn't over yet. ❤️</span></figcaption>
+        </figure>
+      </div>
+
+      <div class="gift-section">
+        <div class="gift-copy">
+          <p class="eyebrow">a little something for you</p>
+          <h3>There’s a tiny gift<br><em>waiting for you.</em></h3>
+          <p>It can’t replace an apology, but I hope it brings a little softness to your day.</p>
+        </div>
+        <button class="gift-box" id="gift-box" type="button" aria-label="Open your virtual gift">
+          <span class="gift-spark gift-spark-a">✦</span><span class="gift-spark gift-spark-b">✧</span>
+          <span class="gift-lid"><span class="gift-bow"></span></span>
+          <span class="gift-body"><span class="gift-ribbon"></span></span>
+          <span class="gift-tap">tap to open</span>
+        </button>
+        <div class="gift-message" id="gift-message" hidden>
+          <span class="gift-heart">♡</span>
+          <h4>A little promise</h4>
+          <p>I promise to keep loving you better, listening to you, understanding you, and proving my love through my actions. I may not be perfect, and I might annoy you a little (okay, maybe a lot 😂), but I’ll always keep choosing you, learning from my mistakes, and trying to be the person your heart deserves. ❤️🫶🏻
+</p>
+          <span class="gift-from">— <span data-my-name>[Your Name]</span></span>
+        </div>
+      </div>
+
+      <div class="final-question">
+        <span class="question-heart">♡</span>
+        <h3>Can I have the chance to make things right?</h3>
+        <p>You don’t have to answer right now. Whatever you’re feeling, I want to respect it.</p>
+        <div class="response-buttons">
+          <button class="primary-button" type="button" id="forgive-button">I’m ready to talk ❤️</button>
+          <button class="secondary-button" type="button" id="time-button">I need a little time 🤍</button>
+        </div>
+        <p class="response-message" id="response-message" aria-live="polite"></p>
+      </div>
+
+      <div class="letter-actions final-actions">
+        <button class="text-button" type="button" onclick="showPage(2)">← Read the letter again</button>
+        <button class="text-button" type="button" onclick="showPage(1)">Back to the beginning ↗</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><span>made with love</span><span>♡</span><span>just for you</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
